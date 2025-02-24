@@ -1,61 +1,47 @@
 body {
     font-family: Arial, sans-serif;
-    padding: 10px;
+    margin: 20px;
   }
   
   h1 {
-    text-align: center;
     font-size: 24px;
   }
   
-  h2 {
-    margin-top: 20px;
-  }
-  
-  input[type="text"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    margin: 5px 0;
-    font-size: 14px;
+  input {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
   }
   
   button {
-    padding: 10px;
-    font-size: 14px;
+    padding: 8px 16px;
+    margin-top: 10px;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #f0f0f0;
   }
   
   ul {
-    list-style-type: none;
-    padding-left: 0;
+    list-style: none;
+    padding: 0;
   }
   
-  .mappingItem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px 0;
-    padding: 5px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
+  li {
+    margin-bottom: 10px;
   }
   
-  .editBtn,
-  .deleteBtn {
-    background-color: transparent;
-    border: none;
+  button.editBtn, button.deleteBtn {
+    margin-left: 10px;
+    padding: 4px 8px;
     cursor: pointer;
   }
   
-  .editBtn {
-    color: #007bff;
+  button.editBtn {
+    background-color: #f0ad4e;
+    color: white;
   }
   
-  .deleteBtn {
-    color: #dc3545;
+  button.deleteBtn {
+    background-color: #d9534f;
+    color: white;
   }
   

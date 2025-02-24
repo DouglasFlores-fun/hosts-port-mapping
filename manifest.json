@@ -1,24 +1,23 @@
 {
     "manifest_version": 3,
-    "name": "Host Mapper",
+    "name": "Dynamic Hostname Mapping",
+    "description": "Map hostnames to URLs and ports dynamically.",
     "version": "1.0",
-    "description": "Map hostnames to IP, IP:Port, or URLs dynamically.",
     "permissions": [
       "storage",
-      "declarativeNetRequest"
+      "declarativeNetRequest",
+      "activeTab",
+      "webNavigation"
+    ],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
     ],
     "background": {
       "service_worker": "background.js"
     },
     "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-
-      }
-    },
-    "host_permissions": [
-      "http://*/",
-      "https://*/"
-    ]
+      "default_popup": "popup.html"
+    }
   }
   
