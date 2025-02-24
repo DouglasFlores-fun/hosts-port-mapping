@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapping Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Host Mappings</h1>
+  <div>
+    <input type="text" id="hostname" placeholder="Hostname (e.g. example.com)">
+    <input type="text" id="target" placeholder="Target (e.g. http://example.com)">
+    <button id="saveMapping">Save Mapping</button>
+  </div>
+
+  <h2>Saved Mappings</h2>
+  <ul id="mappingList"></ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>
